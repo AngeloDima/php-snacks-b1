@@ -20,12 +20,62 @@ $array = [
     ],
 
     $partitaDue = [
-        "Casa" => "Olimpia Milano",
-        "Ospite"  => "Cantù",
-        "Risultato"  =>"55-60",
+        "Casa" => "Virtus",
+        "Ospite"  => "Victoria",
+        "Risultato"  =>"35-50",
+    ],
+
+    $partitaTre = [
+        "Casa" => "PallaBrescia",
+        "Ospite"  => "PallaAugusta",
+        "Risultato"  =>"45-65",
+    ],
+
+    $partitaQuattro = [
+        "Casa" => "Paperino",
+        "Ospite"  => "Pippo",
+        "Risultato"  =>"35-70",
     ]
 
 ];
 
 ?>
+
+<div class="prima">
+<h4> <?= $partitaUno["Casa"] ?> -
+     <?= $partitaUno["Ospite"] ?> | 
+     <?= $partitaUno["Risultato"] ?> 
+</h4>
+</div>
+ 
+<br>
+
+<div class="seconda">
+<h4> <?= $partitaDue["Casa"] ?> -
+     <?= $partitaDue["Ospite"] ?> | 
+     <?= $partitaDue["Risultato"] ?> 
+</h4>
+</div>
+
+<br>
+
+
+<div class="terza">
+<h4> <?= $partitaTre["Casa"] ?> -
+     <?= $partitaTre["Ospite"] ?> | 
+     <?= $partitaTre["Risultato"] ?> 
+</h4>
+</div>
+
+<br>
+
+
+<div class="quarta">
+<h4> <?= $partitaQuattro["Casa"] ?> -
+     <?= $partitaQuattro["Ospite"] ?> | 
+     <?= $partitaQuattro["Risultato"] ?> 
+</h4>
+</div>
+
+
 
