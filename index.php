@@ -79,3 +79,37 @@ $array = [
 
 <!-- --------------------------------------------END--------------- -->
 
+<!-- Passare come parametri GET name, mail e age e verificare
+(cercando i metodi che non conosciamo nella documentazione)
+che name sia più lungo di 3 caratteri,
+che mail contenga un punto e una chiocciola
+e che age sia un numero. Se tutto è ok stampare 
+“Accesso riuscito”, altrimenti “Accesso negato” -->
+
+
+
+
+<?php
+
+$problema1 = $_GET["name"];
+$problema2 = $_GET["mail"];
+$problema3 = $_GET["age"];
+
+// ---------Name---------
+
+  if (strlen($problema1) > 3){
+  $correct = "complimenti";
+
+} else if (strlen($problema1) <= 3 && strlen($problema1) > 0){
+  $false = "scrivi una parola più lunga";
+
+} else if (strlen($problema1) === 0) {
+  $midle = "scrivi";
+}
+?>
+<div>
+<h2> <?= $correct ?> </h2>
+<h2> <?= $false ?> </h2>
+<h2> <?= $midle ?> </h2>
+</div>
+
